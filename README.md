@@ -13,7 +13,32 @@ Required Packages: 5 packages used in this repository are: base, stats, graphics
 
 To install these packages, copy and paste the below commands (all at once, or one at a time) into R, and then press 'enter'.
 
-<pre> <code>```r # Install and load required packages if (!require("base")) { install.packages("base") library("base") } if (!require("stats")) { install.packages("stats") library("stats") } if (!require("graphics")) { install.packages("graphics") library("graphics") } if (!require("aplpack")) { install.packages("aplpack") library("aplpack") } if (!require("nortest")) { install.packages("nortest") library("nortest") } ```</code> </pre>
+```r
+if (!require("base")) {
+  install.packages("base")
+  library("base")
+}
+
+if (!require("stats")) {
+  install.packages("stats")
+  library("stats")
+}
+
+if (!require("graphics")) {
+  install.packages("graphics")
+  library("graphics")
+}
+
+if (!require("aplpack")) {
+  install.packages("aplpack")
+  library("aplpack")
+}
+
+if (!require("nortest")) {
+  install.packages("nortest")
+  library("nortest")
+}
+```
 
 ## Preparing the Databank data set
 This data set contains information about 100 adults. It is a comma-delimited file, meaning that the data values are separated by commas. To import the data file into R and then save as an R project for use in future labs, follow the steps below.
